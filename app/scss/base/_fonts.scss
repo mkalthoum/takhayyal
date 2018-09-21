@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'BrandonMed';
+  src: url('../fonts/BrandonGrotesque-Medium.eot');
+  src: url('../fonts/BrandonGrotesque-Medium.woff') format('woff'),
+  url('../fonts/Brandon_med.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Brandon_med_it';
+  src: url('../fonts/BrandonGrotesque-MediumItalic.eot');
+  src: url('../fonts/BrandonGrotesque-MediumItalic.woff') format('woff'),
+  url('../fonts/BrandonGrotesque-MediumItalic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'BrandonThinIT';
+  src: url('../fonts/BrandonGrotesque-ThinItalic.eot');
+  src: url('../fonts/BrandonGrotesque-ThinItalic.woff') format('woff'),
+  url('../fonts/BrandonGrotesque-ThinItalic.ttf') format('truetype');
+}
+
+
+@mixin BrandonMed {
+  font-family: 'BrandonMed';
+}
+@mixin BrandonMedIT {
+  font-family: 'Brandon_med_it';
+}
+@mixin BrandonThinIT {
+  font-family: 'BrandonThinIT';
+}

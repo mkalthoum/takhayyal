@@ -1,0 +1,15 @@
+.takayyal {
+  margin-top: 30px;
+  img {
+    display: block;
+   margin-left: auto;
+   margin-right: auto;
+    width: 20%;
+      @include breakpoint (sm) {
+width: 45%;
+      }
+      @include breakpoint (md) {
+width: 30%;
+      }
+  }
+}

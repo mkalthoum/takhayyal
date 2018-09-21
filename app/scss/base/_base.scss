@@ -1,0 +1,21 @@
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  background-color: #fff;
+  backface-visibility: hidden;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+::-ms-clear,
+::-webkit-search-decoration,
+::-webkit-search-cancel-button,
+::-webkit-search-results-button,
+::-webkit-search-results-decoration {
+  display: none !important;
+}
