@@ -1,0 +1,53 @@
+.telephone {
+
+  width: 100%;
+
+    @include breakpoint (sm) {
+
+    }
+    @include breakpoint (md) {
+  width: 90%;
+    }
+    @include breakpoint (lg) {
+
+    }
+    @include breakpoint (xlg) {
+
+    }
+    input {
+      width: 100%;
+background: url("../../../images/telephone.png")no-repeat;
+background-size: 18%;
+background-position: left;
+background-position-x: 5px;
+background-position-y: 50%;
+      font-size: 11px;
+      padding:5px;
+      border: 1px solid black;
+      text-align: right;
+      @include BrandonMedIT;
+        @include breakpoint (md) {
+              text-align: center;
+                font-size: 16px;
+                  padding: 10px 5px;
+        }
+        @include breakpoint (lg) {
+              text-align: center;
+                font-size: 22px;
+                  padding: 13px 5px;
+        }
+        @include breakpoint (xlg) {
+          width: 80%;
+              text-align: center;
+                font-size: 22px;
+                  padding: 15px 5px;
+                  background-size: 13%;
+                  background-position-x: 15px;
+                  background-position-y: 10%;
+        }
+    }
+    input:invalid + span:after {
+   color: red;
+    }
+
+}

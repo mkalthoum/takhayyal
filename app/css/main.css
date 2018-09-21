@@ -20,7 +20,8 @@ html {
 
 body {
   background-color: #fff;
-  backface-visibility: hidden; }
+  backface-visibility: hidden;
+  overflow: hidden; }
 
 *, *:before, *:after {
   box-sizing: inherit; }
@@ -38,7 +39,13 @@ body {
   padding: 60px 10px 10px 10px; }
   @media (min-width: 320px) {
     .hero {
-      padding: 100px 10px 10px 10px; } }
+      padding: 50px 10px 10px 10px; } }
+  @media (min-width: 768px) {
+    .hero {
+      padding: 20px 10px 10px 10px; } }
+  @media (min-width: 992px) {
+    .hero {
+      padding: 5px 10px 10px 10px; } }
   .hero img {
     display: block;
     margin-left: auto;
@@ -46,57 +53,22 @@ body {
     width: 15%; }
     @media (min-width: 320px) {
       .hero img {
-        width: 30%; } }
-
-.telephone {
-  position: absolute;
-  top: 12%;
-  right: 20px;
-  width: 15.5%;
-  padding: 10px;
-  border: 1px solid black;
-  margin: 0; }
-  @media (min-width: 320px) {
-    .telephone {
-      top: 16%;
-      border: 0.5px solid black;
-      width: 24.5%;
-      height: 3.2%; } }
-  @media (min-width: 768px) {
-    .telephone {
-      border: 1px solid black;
-      width: 22.5%;
-      height: 4.7%;
-      top: 19%; } }
-  @media (min-width: 992px) {
-    .telephone {
-      border: 0.8px solid black;
-      width: 18.5%;
-      height: 4.40%; } }
-  @media (min-width: 1200px) {
-    .telephone {
-      border: 0.8px solid black;
-      width: 18.5%;
-      height: 5.40%; } }
-  .telephone img {
-    width: 15%;
-    position: absolute;
-    top: 0; }
-    @media (min-width: 320px) {
-      .telephone img {
-        width: 20%;
-        position: absolute;
-        top: 1px;
-        left: 4px; } }
+        width: 40%; } }
     @media (min-width: 768px) {
-      .telephone img {
-        width: 22%;
-        position: absolute;
-        top: 1px;
-        left: 10px; } }
+      .hero img {
+        width: 30%; } }
+    @media (min-width: 1200px) {
+      .hero img {
+        width: 10%; } }
 
 .takayyal {
-  margin-top: 30px; }
+  margin-top: 10px; }
+  @media (min-width: 768px) {
+    .takayyal {
+      margin-top: 30px; } }
+  @media (min-width: 1200px) {
+    .takayyal {
+      margin-top: 10px; } }
   .takayyal img {
     display: block;
     margin-left: auto;
@@ -104,10 +76,30 @@ body {
     width: 20%; }
     @media (min-width: 320px) {
       .takayyal img {
-        width: 45%; } }
+        width: 75%; } }
     @media (min-width: 768px) {
       .takayyal img {
-        width: 30%; } }
+        width: 45%; } }
+    @media (min-width: 1200px) {
+      .takayyal img {
+        width: 15%; } }
+
+.main {
+  height: 100vh;
+  background: url("../../../images/squares.png") no-repeat;
+  background-size: 6%;
+  background-position: right;
+  display: inline-block;
+  background-position-y: 45%;
+  background-position-x: 98%; }
+  @media (min-width: 768px) {
+    .main {
+      background-size: 4%; } }
+  @media (min-width: 1200px) {
+    .main {
+      background-size: 2%;
+      background-position-y: 45%;
+      background-position-x: 99.5%; } }
 
 .main-page {
   border-left: 1px solid black;
@@ -115,7 +107,11 @@ body {
   height: 100%; }
   @media (min-width: 320px) {
     .main-page {
-      height: 50%; } }
+      height: 70%; } }
+  @media (min-width: 1200px) {
+    .main-page {
+      padding: 2% 10% 2% 10%;
+      height: 60%; } }
 
 @media (min-width: 320px) {
   .main {
@@ -125,10 +121,14 @@ body {
   .main {
     margin: 40px 10px; } }
 
+@media (min-width: 992px) {
+  .main {
+    margin: 20px 10px; } }
+
 .footer {
   margin-top: 50px;
   text-align: center;
-  width: 105%; }
+  width: 100%; }
   .footer .IRE p {
     font-size: 12px;
     font-family: 'BrandonThinIT'; }
@@ -153,14 +153,93 @@ body {
 
 @media (min-width: 768px) {
   .footer {
-    margin-top: 80px;
+    margin-top: 70px;
     text-align: center; }
     .footer .IRE p {
       font-size: 17px;
       font-family: 'BrandonThinIT'; }
-    .footer .footer-text p {
-      width: 100%;
-      font-size: 16px; } }
+    .footer .footer-text {
+      text-align: center; }
+      .footer .footer-text p {
+        letter-spacing: normal;
+        padding: 0 40px;
+        font-size: 16px; } }
+
+@media (min-width: 992px) {
+  .footer {
+    margin-top: 70px;
+    text-align: center;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto; }
+    .footer .IRE p {
+      font-size: 24px;
+      font-family: 'BrandonThinIT'; }
+    .footer .footer-text {
+      text-align: center; }
+      .footer .footer-text p {
+        letter-spacing: normal;
+        padding: 0 30px;
+        font-size: 22px; } }
+
+@media (min-width: 992px) {
+  .footer {
+    margin-top: 70px;
+    text-align: center;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto; }
+    .footer .IRE p {
+      font-size: 24px;
+      font-family: 'BrandonThinIT'; }
+    .footer .footer-text {
+      margin-right: auto;
+      margin-left: auto;
+      width: 43%;
+      text-align: center; }
+      .footer .footer-text p {
+        letter-spacing: normal;
+        padding: 0 20px;
+        font-size: 22px; } }
+
+.telephone {
+  width: 100%; }
+  @media (min-width: 768px) {
+    .telephone {
+      width: 90%; } }
+  .telephone input {
+    width: 100%;
+    background: url("../../../images/telephone.png") no-repeat;
+    background-size: 18%;
+    background-position: left;
+    background-position-x: 5px;
+    background-position-y: 50%;
+    font-size: 11px;
+    padding: 5px;
+    border: 1px solid black;
+    text-align: right;
+    font-family: 'Brandon_med_it'; }
+    @media (min-width: 768px) {
+      .telephone input {
+        text-align: center;
+        font-size: 16px;
+        padding: 10px 5px; } }
+    @media (min-width: 992px) {
+      .telephone input {
+        text-align: center;
+        font-size: 22px;
+        padding: 13px 5px; } }
+    @media (min-width: 1200px) {
+      .telephone input {
+        width: 80%;
+        text-align: center;
+        font-size: 22px;
+        padding: 15px 5px;
+        background-size: 13%;
+        background-position-x: 15px;
+        background-position-y: 10%; } }
+  .telephone input:invalid + span:after {
+    color: red; }
 
 p {
   line-height: 1.5;

@@ -1,9 +1,32 @@
+.main {
+  height: 100vh;
+  background: url("../../../images/squares.png")no-repeat;
+
+  background-size: 6%;
+  background-position: right;
+display: inline-block;
+  background-position-y: 45%;
+    background-position-x: 98%;
+    @include breakpoint (md) {
+      background-size: 4%;
+
+    }
+    @include breakpoint (xlg) {
+      background-size: 2%;
+      background-position-y: 45%;
+        background-position-x: 99.5%;
+    }
+}
 .main-page {
   border-left: 1px solid black;
 padding: 5% 10%;
 height: 100%;
 @include breakpoint (sm) {
-height: 50%;
+height: 70%;
+}
+@include breakpoint (xlg) {
+padding: 2% 10% 2% 10%;
+height: 60%;
 }
 }
 @include breakpoint (sm) {
@@ -16,4 +39,12 @@ height: 50%;
 .main {
     margin: 40px 10px;
 }
+
+}
+
+@include breakpoint (lg) {
+.main {
+    margin: 20px 10px;
+}
+
 }
