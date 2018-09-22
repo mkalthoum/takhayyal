@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
+ var deploy = require('gulp-gh-pages');
 // Gulp tasks begins here
 // Sass compiler
 gulp.task('sass', function() {
@@ -29,3 +30,11 @@ gulp.task('serve', ['sass'], function() {
 });
 
 gulp.task('default', ['serve']);
+
+gulp.task('deploy', function () {
+   return gulp.src("./app/**/*")
+     .pipe(deploy({
+       remoteUrl: "https://github.com/mkalthoum/takhayyal.git",
+       branch: "master"
+     }))
+ });
